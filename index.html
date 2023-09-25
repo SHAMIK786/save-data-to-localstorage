@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>UNTITLED DOCUMENT</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <!-- <h1>Save anything you want and it will be saved in the localstorage of the Browser</h1> -->
+        </div>
+
+        <div class="display">
+
+            <div class="default_display">
+                <h1 style="margin-top: 30px;color: #fff;">Welcome to Z & Creations</h1>
+                <h2 style="color: #fff; width: 80%; margin: 0 auto;margin-top: 30px;">
+                    This is a JavaScript programmed application using which you can save your data in the browsers localStorage.
+                </h2>
+            </div>
+
+            <!-----Input_Display----->
+            <div class="input_display">
+                <div class="display_info_box">
+                    <h3 class="display_info">The data below will be saved...</h3>
+                </div>
+
+                <div class="input_elems">
+                    <input style="width: 25%;margin-top: -10px;margin-bottom: 10px;" class="data_name"
+                        placeholder="Enter Data Name" required>
+                    <div class="inp_box">
+                        <input class="label_inp" placeholder="Title">
+                            <span class="separator">:-</span><input class="user_input" placeholder="Descripton">
+                            <button class="inp_box_btn btn_ok">Ok</button>
+                    </div>
+                    <div class="inp_box">
+                        <input class="label_inp" placeholder="Title">
+                            <span class="separator">:-</span><input class="user_input" placeholder="Descripton">
+                            <button class="inp_box_btn btn_ok">Ok</button>
+                    </div>
+                    <div class="inp_box">
+                        <input class="label_inp" placeholder="Title"><span 
+                            class="separator">:-</span><input class="user_input" placeholder="Descripton">
+                            <button class="inp_box_btn btn_ok">Ok</button>
+                    </div>
+                </div>
+                <div class="display_inside_btn">
+                    <button class="add_field_btn" onclick="addField()">Add Field</button>
+                </div>
+            </div>
+            <!---X--End OF Input Display----X--->
+
+            <!-----Data_Prview_Display----->
+            <div class="preview_display">
+                <div class="select_data_box">
+                    <h2 class="preview_info">Select a data that you want to see...</h2>
+                    <div class="select_options">
+                    <div class="select_row"><span class="opt_name">NO DATA SAVED</span></div>
+                    </div>
+                </div>
+                
+                <div class="show_data_row">
+                    <h2 class="preview_info">Here is your data.</h2>
+                    
+                    <div class="table">
+                        <h3 class="show_sel_data_name">Data Name:- <span class="data_name_shown"></span></h3>
+
+                        <div class="element_container">
+                            <div class="element">
+                                <div class="serial_no">SL No.</div>
+                                <div class="title"></div>
+                                <div class="desc"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- -----X----End_of_Preiew_Display----X -->
+        </div>
+
+        <div class="display_ctrl_btns">
+            <div class="left_side_btns">
+                <button class="btn_ctrl btn_save">Save Data</button>
+            </div>
+            <div class="right_side_btns">
+                <button class="btn_ctrl btn_view_data">View Saved Data</button>
+                <button class="btn_ctrl btn_create_data">Create New Data</button>
+                <button class="btn_ctrl btn_clear_storage">Clear All Saved Data</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="design_block "></div>
+    <div class="design_block"></div>
+    <div class="design_block"></div>
+    <div class="design_block"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+<!-- 
+<div class="data_name">Data Name</div>
+                    <div class="title_row"><span class="show_title">Title</span></div>
+                    <div class="desc_row"><span class="show_desc">Description</span></div> -->
+<!-- 
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">SNo</th>
+                                <th scope="col">Item Title</th>
+                                <th scope="col">Item Description</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="title_elem">Get some Coffee</td>
+                                <td class="desc_elem">You need coffee as you are a coder</td>
+                                <td><button class="btn_delete" id="del_btn">Delete</button></td>
+                            </tr>
+        
+                        </tbody>
+                    </table> -->
